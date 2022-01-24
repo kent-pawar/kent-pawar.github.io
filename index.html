@@ -29,9 +29,35 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6014710366027057"
      crossorigin="anonymous"></script>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+<script>
+var setVanta = ()=>{
+if (window.VANTA) window.VANTA.WAVES({
+  el: "#header",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  shininess: 19.00,
+  waveHeight: 37.50,
+  waveSpeed: 0.55,
+  zoom: 0.87
+})
+}
+_strk.push(function() {
+  setVanta()
+  window.edit_page.Event.subscribe( "Page.beforeNewOneFadeIn", setVanta )
+})
+</script>
     
   </head>
 <body>
+  <div id="header">
+  </div>
 <h1>Crypto-Tax.in</h1>
 <p></p>
   <ul>
